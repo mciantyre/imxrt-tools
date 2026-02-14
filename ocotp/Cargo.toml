@@ -1,8 +1,8 @@
 # SPDX-License-Identifier: MPL-2.0
-# SPDX-FileCopyrightText: Copyright 2024 Ian McIntyre
+# SPDX-FileCopyrightText: Copyright 2026 Ian McIntyre
 
 [package]
-name = "tools"
+name = "ocotp"
 version = "0.1.0"
 license.workspace = true
 repository.workspace = true
@@ -11,8 +11,4 @@ publish.workspace = true
 authors.workspace = true
 
 [dependencies]
-ccm-obs = { workspace = true }
-ocotp = { workspace = true }
-
-clap = { workspace = true, features = ["derive"] }
 probe-rs = { workspace = true }

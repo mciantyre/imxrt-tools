@@ -3,7 +3,7 @@
 
 [workspace]
 resolver = "2"
-members = ["ccm-obs", "tools"]
+members = ["ccm-obs", "ocotp", "tools"]
 
 [workspace.package]
 license = "MPL-2.0"
@@ -14,6 +14,7 @@ authors = ["Ian McIntyre <me@mciantyre.dev>"]
 
 [workspace.dependencies]
 ccm-obs = { path = "ccm-obs" }
+ocotp = { path = "ocotp" }
 
 clap = { version = "4.5.20" }
 probe-rs = { version = "0.29.1" }

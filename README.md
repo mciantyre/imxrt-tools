@@ -82,6 +82,37 @@ Consult your MCUs reference manual to understand the limitations of the
 
 Check the project's issue tracker for other missing features and bugs.
 
+# `imxrt-ocotp`
+
+The `imxrt-ocotp` command line tool reads and writes on-chip fuses using
+the MCU's OCOTP peripheral. The tool works for the following MCUs:
+
+- iMXRT1160
+- iMXRT1170
+
+Fuse addresses come from your MCU's reference manual.
+
+To read the fuse at address 0x1300:
+
+```
+imxrt-ocotp imxrt1170 read --fuse-address 0x1300
+```
+
+To write a value to the fuse at address 0x1300:
+
+```
+imxrt-ocotp imxrt1170 write --fuse-address 0x1300 --fuse-value 0xABCD
+```
+
+For an interactive, double-checked data entry mode, use
+
+```
+imxrt-ocotp imxrt1170 write
+```
+
+*Writing fuses is irreversible*. Once bits are set they cannot be cleared. Use
+`--dry-run` to practice a fuse write without engaging with the OCOTP.
+
 # License
 
 All packages are licensed MPL-2.0. See [LICENSE](./LICENSE) for more
