@@ -1,4 +1,4 @@
-A collection of tools to support i.MXRT MCU debugging.
+A collection of host-side tools to support i.MXRT MCU firmware development.
 
 # Getting started
 
@@ -20,7 +20,7 @@ using `cargo install`. All command line tools are implemented in the `tools`
 package.
 
 ```
-cargo install tools --git https://github.com/mciantyre/imxrt-debug-tools
+cargo install tools --git https://github.com/mciantyre/imxrt-tools
 ```
 
 The rest of this document summarizes the tools.

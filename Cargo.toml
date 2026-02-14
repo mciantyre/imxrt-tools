@@ -7,7 +7,7 @@ members = ["ccm-obs", "ocotp", "tools"]
 
 [workspace.package]
 license = "MPL-2.0"
-repository = "https://github.com/mciantyre/imxrt-debug-tools"
+repository = "https://github.com/mciantyre/imxrt-tools"
 edition = "2021"
 publish = false
 authors = ["Ian McIntyre <me@mciantyre.dev>"]
